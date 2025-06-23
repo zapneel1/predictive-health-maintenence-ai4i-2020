@@ -68,3 +68,40 @@ Example output:
     "historical": {...}
   }
 }
+
+
+## How to Use
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/predictive-maintenance-digital-twin.git
+   cd predictive-maintenance-digital-twin
+   ```
+
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the notebook**
+   ```bash
+   jupyter notebook notebooks/AI4I_Full_Predictive_Model_With_Safe_Region_with_outputs_final.ipynb
+   ```
+
+Or use scripts in `src/` for modular execution.
+
+## Key Outputs
+
+- Trained LSTM/CNN models with evaluated metrics
+- Confusion matrix and model performance plots
+- Safe region visualizations for operational safety
+- AAS-formatted JSON files for each digital twin instance
+
+## License
+
+This repository is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgments
+
+- Dataset by Stephan Matzka on Kaggle
+- AAS concept aligned with Industry 4.0 standards
