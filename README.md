@@ -85,8 +85,8 @@ Example output:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/predictive-maintenance-digital-twin.git
-   cd predictive-maintenance-digital-twin
+   git clone https://github.com/zapneel1/predictive-health-maintenence-ai4i-2020.git
+   cd predictive-health-maintenence-ai4i-2020
    ```
 
 2. **Install dependencies**
