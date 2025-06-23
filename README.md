@@ -2,7 +2,7 @@
 
 This project builds a predictive maintenance framework combining deep learning, pattern recognition, and Asset Administration Shell (AAS)-based device representation using the publicly available AI4I 2020 dataset.
 
-## 🚀 Objective
+## Objective
 
 To build a reusable end-to-end framework capable of:
 - Capturing sensor-based operational data.
@@ -11,7 +11,7 @@ To build a reusable end-to-end framework capable of:
 - Visualizing predictions and system health insights.
 
 
-## 📂 Project Structure
+## Project Structure
 
 - **data/**: Raw dataset from Kaggle.
 - **notebooks/**: Final notebook with complete code, models, graphs, and output.
@@ -21,13 +21,13 @@ To build a reusable end-to-end framework capable of:
 - **src/**: Python scripts used for modular execution (e.g., preprocessing, model training).
 
 
-## 📊 Dataset
+## Dataset
 
 - Source: [AI4I 2020 Predictive Maintenance Dataset](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020)
 - Contains operational metrics of air pressure systems with machine status classification (No Failure, Heat Dissipation Failure, Overstrain, Power Failure, Random Failures).
 
 
-## 🔧 Key Technologies Used
+## Key Technologies Used
 
 - **Python**, **Pandas**, **NumPy**, **Scikit-learn**
 - **TensorFlow / Keras** for deep learning models
@@ -35,7 +35,7 @@ To build a reusable end-to-end framework capable of:
 - **AAS JSON format** for digital twin data representation
 
 
-## 📈 Model Features & Outputs
+## Model Features & Outputs
 
 - Preprocessing: Scaling, missing value imputation, categorical encoding.
 - Feature Engineering: Derived features from sensor readings and machine types.
@@ -50,7 +50,7 @@ To build a reusable end-to-end framework capable of:
   - Loss curves, confusion matrix, prediction confidence, and 3D safe zone regions.
 
 
-## 🧠 Asset Administration Shell (AAS)
+## Asset Administration Shell (AAS)
 
 The sensor data is transformed into a structured AAS representation:
 - Submodels include:
