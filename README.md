@@ -171,5 +171,5 @@ This repository is licensed under the MIT License. See the LICENSE file for deta
 
 ## Acknowledgments
 
-- Dataset by Stephan Matzka on Kaggle
+- Raw dataset provided by Stephan Matzka on Kaggle
 - AAS concept aligned with Industry 4.0 standards
