@@ -63,11 +63,22 @@ Example output:
 {
   "asset": "AirPressureSystem_001",
   "submodels": {
-    "operational": {...},
-    "prediction": {...},
-    "historical": {...}
+    "operational": {
+      "u1": 33.8,
+      "u2": 47.0,
+      "u3": 28.9
+    },
+    "historical": {
+      "type": "L",
+      "failures": ["Heat Dissipation Failure"]
+    },
+    "prediction": {
+      "probability_failure": 0.021,
+      "status": "Safe"
+    }
   }
 }
+```
 
 
 ## How to Use
