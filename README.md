@@ -10,7 +10,6 @@ To build a reusable end-to-end framework capable of:
 - Applying deep learning for pattern recognition and predictive maintenance.
 - Visualizing predictions and system health insights.
 
----
 
 ## 📂 Project Structure
 
@@ -21,14 +20,12 @@ To build a reusable end-to-end framework capable of:
 - **docs/**: Project planning and documentation.
 - **src/**: Python scripts used for modular execution (e.g., preprocessing, model training).
 
----
 
 ## 📊 Dataset
 
 - Source: [AI4I 2020 Predictive Maintenance Dataset](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020)
 - Contains operational metrics of air pressure systems with machine status classification (No Failure, Heat Dissipation Failure, Overstrain, Power Failure, Random Failures).
 
----
 
 ## 🔧 Key Technologies Used
 
@@ -37,7 +34,6 @@ To build a reusable end-to-end framework capable of:
 - **Matplotlib / Seaborn** for visualization
 - **AAS JSON format** for digital twin data representation
 
----
 
 ## 📈 Model Features & Outputs
 
@@ -53,7 +49,6 @@ To build a reusable end-to-end framework capable of:
 - Graphs and Plots:
   - Loss curves, confusion matrix, prediction confidence, and 3D safe zone regions.
 
----
 
 ## 🧠 Asset Administration Shell (AAS)
 
