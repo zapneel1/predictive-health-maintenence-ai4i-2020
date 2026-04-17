@@ -158,7 +158,7 @@ The following outputs were generated during the development and evaluation of th
    - This output supports integration with digital twin platforms and standardization via Industry 4.0 schemas.
 
 6. **Notebook Execution**
-   - The full Jupyter Notebook includes:
+   - The full Jupyter Notebook includes the following:
      - Dataset loading and inspection
      - Model definition and training
      - Evaluation reports and performance metrics
