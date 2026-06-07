@@ -1,175 +1,154 @@
-# Predictive Maintenance Framework with Digital Twin Representation (AI4I 2020 Dataset)
+# AAS-Based Predictive Maintenance Benchmark on AI4I 2020
 
-This project builds a predictive maintenance framework combining deep learning, pattern recognition, and Asset Administration Shell (AAS)-based device representation using the publicly available AI4I 2020 dataset.
+This repository provides reproducible predictive-maintenance experiments and AAS-compatible digital twin artifacts. The project focuses on two connected goals:
 
-## Objective
+1. build an Asset Administration Shell (AAS)-compatible digital twin representation for machine condition data and failure-risk outputs;
+2. evaluate failure prediction on the highly imbalanced AI4I 2020 synthetic benchmark using reproducible, imbalance-aware baselines.
 
-To build a reusable end-to-end framework capable of:
-- Capturing sensor-based operational data.
-- Structuring it in AAS format for interoperability.
-- Applying deep learning for pattern recognition and predictive maintenance.
-- Visualizing predictions and system health insights.
-
-
-## Project Structure
-
-- **data/**: Raw dataset from Kaggle.
-- **notebooks/**: Final notebook with complete code, models, graphs, and output.
-- **aas/**: Generated AAS file representing digital twin format.
-- **results/**: Visual outputs, graphs, and reports.
-- **docs/**: Project planning and documentation.
-- **src/**: Python scripts used for modular execution (e.g., preprocessing, model training).
-
+AI4I 2020 is treated as a synthetic tabular classification dataset, not as a true timestamped run-to-failure time-series dataset. A second dataset, UCI SECOM, is included as external validation on real semiconductor manufacturing process data.
 
 ## Dataset
 
-- Source: [AI4I 2020 Predictive Maintenance Dataset](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020)
-- Contains operational metrics of air pressure systems with machine status classification (No Failure, Heat Dissipation Failure, Overstrain, Power Failure, Random Failures).
+Source: [AI4I 2020 Predictive Maintenance Dataset](https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020)
 
+The dataset contains 10,000 records with:
 
-## Key Technologies Used
+- product type;
+- air temperature;
+- process temperature;
+- rotational speed;
+- torque;
+- tool wear;
+- an overall `Machine failure` label;
+- five failure-mode labels: `TWF`, `HDF`, `PWF`, `OSF`, and `RNF`.
 
-- **Python**, **Pandas**, **NumPy**, **Scikit-learn**
-- **TensorFlow / Keras** for deep learning models
-- **Matplotlib / Seaborn** for visualization
-- **AAS JSON format** for digital twin data representation
+Class imbalance is severe:
 
+| Target | Positive count | Positive rate |
+| --- | ---: | ---: |
+| `Machine failure` | 339 | 3.39% |
+| `TWF` | 46 | 0.46% |
+| `HDF` | 115 | 1.15% |
+| `PWF` | 95 | 0.95% |
+| `OSF` | 98 | 0.98% |
+| `RNF` | 19 | 0.19% |
 
-## Model Features & Outputs
+## Repository Structure
 
-- Preprocessing: Scaling, missing value imputation, categorical encoding.
-- Feature Engineering: Derived features from sensor readings and machine types.
-- Models Used:
-  - LSTM for time-series sequence prediction.
-  - CNN for anomaly classification.
-- Performance Metrics:
-  - Accuracy, Precision, Recall, F1-Score.
-- Safe Operating Region Detection:
-  - Visualized regions where machines operate reliably.
-- Graphs and Plots:
-  - Loss curves, confusion matrix, prediction confidence, and 3D safe zone regions.
-
-
-## Asset Administration Shell (AAS)
-
-The sensor data is transformed into a structured AAS representation:
-- Submodels include:
-  - **Operational Data**
-  - **Historical Failures**
-  - **Predicted States**
-
-Example output:
-```json
-{
-  "asset": "AirPressureSystem_001",
-  "submodels": {
-    "operational": {
-      "u1": 33.8,
-      "u2": 47.0,
-      "u3": 28.9
-    },
-    "historical": {
-      "type": "L",
-      "failures": ["Heat Dissipation Failure"]
-    },
-    "prediction": {
-      "probability_failure": 0.021,
-      "status": "Safe"
-    }
-  }
-}
+```text
+aas/
+  aas_output.json
+data/
+  ai4i2020 (4).csv
+  secom/
+notebooks/
+  AI4I_Full_Predictive_Model_With_Safe_Region_with_outputs_final_fixed_with_model_and_aas.ipynb
+results/
+  baseline_metrics.csv
+  best_models_by_target.csv
+  class_distribution.csv
+  experiment_summary.json
+src/
+  run_baseline_experiments.py
 ```
 
+## Reproducible Experiments
 
-## How to Use
+Install dependencies:
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/zapneel1/predictive-health-maintenence-ai4i-2020.git
-   cd predictive-health-maintenence-ai4i-2020
-   ```
+```powershell
+pip install -r requirements.txt
+```
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Run AI4I baselines:
 
-3. **Run the notebook**
-   ```bash
-   jupyter notebook notebooks/AI4I_Full_Predictive_Model_With_Safe_Region_with_outputs_final.ipynb
-   ```
+```powershell
+python src/run_baseline_experiments.py
+```
 
-Or use scripts in `src/` for modular execution.
+Run the second-dataset SECOM validation:
 
-## Key Outputs
+```powershell
+python src/run_secom_experiments.py
+```
 
-The following outputs were generated during the development and evaluation of the predictive maintenance framework:
+The script trains one binary classifier for each target:
 
-1. **Model Performance**
-   - Deep learning models were trained over 25 epochs using categorical failure labels.
-   - Final test accuracy: approximately **30.4%**, indicating challenges in class imbalance and model generalization.
-   - Detailed classification reports were generated for each failure mode:
-     - **TWF (Tool Wear Failure)**: Precision/recall near 0 due to under-representation in the dataset.
-     - **HDF (Heat Dissipation Failure)**: F1-score around 0.11 for class 1 due to low recall.
-     - Majority class (non-failure) was predicted reliably with over 99% accuracy.
+- `Machine failure`
+- `TWF`
+- `HDF`
+- `PWF`
+- `OSF`
+- `RNF`
 
-2. **Training Progress Plots**
-   - Line plots for training and validation loss and accuracy over 25 epochs.
-   - The model showed learning progression but also signs of underfitting or poor generalization to minority classes.
+Models currently compared:
 
-3. **Confusion Matrices**
-   - Generated confusion matrices for each failure type (TWF, HDF, PWF, OSF, RNF).
-   - Highlighted strong class imbalance with almost all predictions biased toward non-failure.
+- majority-class dummy baseline;
+- class-weighted Logistic Regression;
+- class-weighted Decision Tree;
+- class-weighted Random Forest;
+- SMOTE + Logistic Regression;
+- SMOTE + Random Forest;
+- sample-weighted Histogram Gradient Boosting.
 
-4. **Safe Operating Region Visualization**
-   - 3D scatter plots created to illustrate safe zones in the parameter space using features like:
-     - Air Temperature
-     - Process Temperature
-     - Torque, RPM, and Tool Wear
-   - This helped define conditions where failure probability was minimal based on prediction results.
+The script also tunes decision thresholds on a validation split using F2 score, which favors recall. This is more appropriate for predictive maintenance than raw accuracy because missed failures are operationally expensive.
 
-5. **Asset Administration Shell (AAS) Output**
-   - JSON-based AAS structure generated for each data point, e.g.:
-     ```json
-     {
-       "Asset": {
-         "Type": "CNC Machine",
-         "Model": "AI4I-2020",
-         "Submodels": {
-           "OperationalData": {
-             "Type": 2,
-             "AirTemp[K]": 298.1,
-             "ProcessTemp[K]": 308.6,
-             "RPM": 1551.0,
-             "Torque[Nm]": 42.8,
-             "ToolWear[min]": 0.0
-           },
-           "FailureState": {
-             "TWF": 0,
-             "HDF": 0,
-             "PWF": 0,
-             "OSF": 0,
-             "RNF": 0
-           }
-         }
-       }
-     }
-     ```
-   - This output supports integration with digital twin platforms and standardization via Industry 4.0 schemas.
+## Current Best Results
 
-6. **Notebook Execution**
-   - The full Jupyter Notebook includes the following:
-     - Dataset loading and inspection
-     - Model definition and training
-     - Evaluation reports and performance metrics
-     - Visualizations embedded inline for clear interpretability
+Generated by `python src/run_baseline_experiments.py`:
 
+| Target | Best model | Precision | Recall | F1 | PR-AUC | False negatives |
+| --- | --- | ---: | ---: | ---: | ---: | ---: |
+| `Machine failure` | Histogram Gradient Boosting | 0.616 | 0.779 | 0.688 | 0.815 | 15 |
+| `TWF` | Histogram Gradient Boosting | 0.208 | 0.556 | 0.303 | 0.419 | 4 |
+| `HDF` | Histogram Gradient Boosting + tuned threshold | 1.000 | 1.000 | 1.000 | 1.000 | 0 |
+| `PWF` | SMOTE + Random Forest | 0.800 | 0.842 | 0.821 | 0.894 | 3 |
+| `OSF` | SMOTE + Logistic Regression | 0.864 | 1.000 | 0.927 | 0.978 | 0 |
+| `RNF` | Random Forest + tuned threshold | 0.005 | 0.250 | 0.009 | 0.004 | 3 |
+
+These results should be interpreted carefully. `RNF` remains unreliable because there are only 19 positive samples in the full dataset.
+
+## Second Dataset: UCI SECOM
+
+SECOM provides a second manufacturing dataset beyond AI4I. It contains real semiconductor manufacturing process measurements with an imbalanced pass/fail label.
+
+Generated by `python src/run_secom_experiments.py`:
+
+| Dataset | Rows | Features | Failures | Best model | Precision | Recall | F1 | PR-AUC |
+| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: | ---: |
+| SECOM | 1567 | 590 | 104 | SMOTE + Random Forest + tuned threshold | 0.158 | 0.714 | 0.259 | 0.307 |
+
+SECOM confirms that high recall is possible on a second manufacturing dataset, but precision remains low under severe imbalance. This should be discussed as a practical trade-off in early-warning maintenance systems.
+
+Generate figures:
+
+```powershell
+python src/generate_revision_artifacts.py
+```
+
+Generate AAS prediction examples and the source-to-AAS mapping table:
+
+```powershell
+python src/generate_aas_predictions.py
+```
+
+## AAS Digital Twin Mapping
+
+The AAS representation should be presented as the framework contribution. A recommended mapping is:
+
+| AI4I field | AAS submodel | AAS property |
+| --- | --- | --- |
+| `Type` | `AssetIdentification` | `productType` |
+| `Air temperature [K]` | `OperationalData` | `airTemperature` |
+| `Process temperature [K]` | `OperationalData` | `processTemperature` |
+| `Rotational speed [rpm]` | `OperationalData` | `rotationalSpeed` |
+| `Torque [Nm]` | `OperationalData` | `torque` |
+| `Tool wear [min]` | `OperationalData` | `toolWear` |
+| `TWF`, `HDF`, `PWF`, `OSF`, `RNF` | `FailureState` | failure-mode flags |
+| model probability | `PredictionResult` | `failureProbability` |
+| tuned threshold | `PredictionResult` | `decisionThreshold` |
+| predicted state | `PredictionResult` | `riskStatus` |
 
 ## License
 
-This repository is licensed under the MIT License. See the LICENSE file for details.
-
-## Acknowledgments
-
-- Raw dataset provided by Stephan Matzka on Kaggle
-- AAS concept aligned with Industry 4.0 standards
+MIT License.
