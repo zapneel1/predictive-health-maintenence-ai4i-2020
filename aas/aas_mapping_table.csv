@@ -1,0 +1,17 @@
+source_field,aas_submodel,aas_property
+Type,AssetIdentification,productType
+Air temperature [K],OperationalData,airTemperatureK
+Process temperature [K],OperationalData,processTemperatureK
+Rotational speed [rpm],OperationalData,rotationalSpeedRpm
+Torque [Nm],OperationalData,torqueNm
+Tool wear [min],OperationalData,toolWearMin
+Machine failure,FailureState,machineFailure
+TWF,FailureState,toolWearFailure
+HDF,FailureState,heatDissipationFailure
+PWF,FailureState,powerFailure
+OSF,FailureState,overstrainFailure
+RNF,FailureState,randomFailure
+model probability,PredictionResult,failureProbability
+validation threshold,PredictionResult,decisionThreshold
+predicted label,PredictionResult,predictedFailure
+risk class,PredictionResult,riskStatus

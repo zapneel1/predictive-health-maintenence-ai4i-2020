@@ -1,0 +1,2 @@
+dataset,target,model,positives,support,threshold,precision,recall,f1,balanced_accuracy,pr_auc,roc_auc,tn,fp,fn,tp
+SECOM,manufacturing_fail,random_forest_smote@tuned_f2,21,314,0.2055754761904762,0.15789473684210525,0.7142857142857143,0.25862068965517243,0.7206240858117992,0.3068525364128624,0.8135868681943766,213,80,6,15
