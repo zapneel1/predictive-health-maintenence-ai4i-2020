@@ -1,0 +1,25 @@
+{
+  "data": "data\\ai4i2020 (4).csv",
+  "rows": 10000,
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "targets": [
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "outputs": {
+    "class_distribution": "results\\class_distribution.csv",
+    "baseline_metrics": "results\\baseline_metrics.csv",
+    "best_models_by_target": "results\\best_models_by_target.csv"
+  }
+}

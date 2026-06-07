@@ -1,0 +1,7 @@
+target,positive_count,total,positive_rate
+Machine failure,339,10000,0.0339
+TWF,46,10000,0.0046
+HDF,115,10000,0.0115
+PWF,95,10000,0.0095
+OSF,98,10000,0.0098
+RNF,19,10000,0.0019
