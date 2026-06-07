@@ -1,0 +1,11 @@
+{
+  "dataset": "UCI SECOM",
+  "rows": 1567,
+  "features": 590,
+  "positive_failures": 104,
+  "positive_rate": 0.06636885768985322,
+  "outputs": {
+    "metrics": "results\\secom_baseline_metrics.csv",
+    "best_model": "results\\secom_best_model.csv"
+  }
+}

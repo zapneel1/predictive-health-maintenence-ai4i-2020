@@ -1,0 +1,6 @@
+data/secom/
+docs/
+__pycache__/
+*.pyc
+*.pdf
+*_extracted.txt
