@@ -1,0 +1,952 @@
+[
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04730",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51909"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 303.4,
+          "processTemperatureK": 311.8,
+          "rotationalSpeedRpm": 1306.0,
+          "torqueNm": 61.0,
+          "toolWearMin": 215.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 1,
+          "powerFailure": 0,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.996242,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_07594",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L54773"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 300.5,
+          "processTemperatureK": 311.2,
+          "rotationalSpeedRpm": 1270.0,
+          "torqueNm": 67.5,
+          "toolWearMin": 208.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.99395,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04644",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51823"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 303.2,
+          "processTemperatureK": 311.4,
+          "rotationalSpeedRpm": 1324.0,
+          "torqueNm": 54.2,
+          "toolWearMin": 228.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 1,
+          "powerFailure": 0,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.992853,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_07510",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L54689"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 300.6,
+          "processTemperatureK": 311.9,
+          "rotationalSpeedRpm": 1372.0,
+          "torqueNm": 60.1,
+          "toolWearMin": 212.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.992146,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04384",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51563"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 301.7,
+          "processTemperatureK": 309.5,
+          "rotationalSpeedRpm": 1298.0,
+          "torqueNm": 65.5,
+          "toolWearMin": 229.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 1,
+          "powerFailure": 0,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.991573,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_09660",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L56839"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 298.9,
+          "processTemperatureK": 309.8,
+          "rotationalSpeedRpm": 1287.0,
+          "torqueNm": 61.9,
+          "toolWearMin": 216.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.990888,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04463",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51642"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 302.7,
+          "processTemperatureK": 310.5,
+          "rotationalSpeedRpm": 1263.0,
+          "torqueNm": 67.8,
+          "toolWearMin": 197.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 1,
+          "powerFailure": 0,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.989946,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_09975",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L57154"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 298.6,
+          "processTemperatureK": 308.2,
+          "rotationalSpeedRpm": 1361.0,
+          "torqueNm": 68.2,
+          "toolWearMin": 172.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 1,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.989027,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04502",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51681"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 302.5,
+          "processTemperatureK": 310.2,
+          "rotationalSpeedRpm": 1307.0,
+          "torqueNm": 54.0,
+          "toolWearMin": 86.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 1,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.988706,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_01497",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L48676"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 298.0,
+          "processTemperatureK": 308.7,
+          "rotationalSpeedRpm": 1268.0,
+          "torqueNm": 69.4,
+          "toolWearMin": 189.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 1,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.988378,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_09085",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L56264"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 297.2,
+          "processTemperatureK": 307.9,
+          "rotationalSpeedRpm": 1326.0,
+          "torqueNm": 75.4,
+          "toolWearMin": 172.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 1,
+          "overstrainFailure": 1,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.98803,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04449",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51628"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 302.4,
+          "processTemperatureK": 310.3,
+          "rotationalSpeedRpm": 1374.0,
+          "torqueNm": 51.2,
+          "toolWearMin": 163.0
+        },
+        "FailureState": {
+          "machineFailure": 1,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 1,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.987439,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_02905",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L50084"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 300.6,
+          "processTemperatureK": 309.4,
+          "rotationalSpeedRpm": 2496.0,
+          "torqueNm": 13.5,
+          "toolWearMin": 111.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.570257,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_03590",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L50769"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 301.7,
+          "processTemperatureK": 310.5,
+          "rotationalSpeedRpm": 2465.0,
+          "torqueNm": 13.7,
+          "toolWearMin": 149.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.537736,
+          "decisionThreshold": 0.5,
+          "predictedFailure": true,
+          "riskStatus": "AtRisk"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_02861",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "H32274"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "H",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 300.6,
+          "processTemperatureK": 309.4,
+          "rotationalSpeedRpm": 1463.0,
+          "torqueNm": 49.2,
+          "toolWearMin": 235.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.498834,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_07087",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L54266"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 300.6,
+          "processTemperatureK": 310.4,
+          "rotationalSpeedRpm": 2514.0,
+          "torqueNm": 13.4,
+          "toolWearMin": 215.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.383079,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04119",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51298"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 302.0,
+          "processTemperatureK": 310.6,
+          "rotationalSpeedRpm": 1366.0,
+          "torqueNm": 47.7,
+          "toolWearMin": 206.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.375825,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04381",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51560"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 301.9,
+          "processTemperatureK": 309.6,
+          "rotationalSpeedRpm": 1410.0,
+          "torqueNm": 49.0,
+          "toolWearMin": 223.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.371123,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_03585",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L50764"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 301.8,
+          "processTemperatureK": 310.6,
+          "rotationalSpeedRpm": 1192.0,
+          "torqueNm": 68.9,
+          "toolWearMin": 135.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.357746,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_06613",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L53792"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 301.6,
+          "processTemperatureK": 310.6,
+          "rotationalSpeedRpm": 1222.0,
+          "torqueNm": 70.0,
+          "toolWearMin": 62.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.350769,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_06519",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "H35932"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "H",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 301.0,
+          "processTemperatureK": 310.0,
+          "rotationalSpeedRpm": 1212.0,
+          "torqueNm": 67.9,
+          "toolWearMin": 30.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.349369,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_04031",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L51210"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 302.0,
+          "processTemperatureK": 310.8,
+          "rotationalSpeedRpm": 2143.0,
+          "torqueNm": 17.3,
+          "toolWearMin": 227.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.341899,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_07678",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "L54857"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "L",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 300.6,
+          "processTemperatureK": 311.7,
+          "rotationalSpeedRpm": 1428.0,
+          "torqueNm": 52.6,
+          "toolWearMin": 208.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.336562,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_05997",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "M20856"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "M",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 300.5,
+          "processTemperatureK": 310.2,
+          "rotationalSpeedRpm": 1386.0,
+          "torqueNm": 48.2,
+          "toolWearMin": 225.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.319261,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  },
+  {
+    "assetAdministrationShell": {
+      "idShort": "AI4I_Machine_08199",
+      "assetInformation": {
+        "assetKind": "Instance",
+        "globalAssetId": "M23058"
+      },
+      "submodels": {
+        "AssetIdentification": {
+          "productType": "M",
+          "dataset": "AI4I 2020 synthetic predictive maintenance benchmark"
+        },
+        "OperationalData": {
+          "airTemperatureK": 299.3,
+          "processTemperatureK": 310.7,
+          "rotationalSpeedRpm": 1374.0,
+          "torqueNm": 48.9,
+          "toolWearMin": 222.0
+        },
+        "FailureState": {
+          "machineFailure": 0,
+          "toolWearFailure": 0,
+          "heatDissipationFailure": 0,
+          "powerFailure": 0,
+          "overstrainFailure": 0,
+          "randomFailure": 0
+        },
+        "PredictionResult": {
+          "target": "Machine failure",
+          "model": "hist_gradient_weighted",
+          "failureProbability": 0.315707,
+          "decisionThreshold": 0.5,
+          "predictedFailure": false,
+          "riskStatus": "Warning"
+        }
+      }
+    }
+  }
+]
